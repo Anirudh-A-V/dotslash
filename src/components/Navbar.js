@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
+import './Navbar.css'
+import { Button } from './Button.js';
 
 
 function Navbar() {
@@ -46,6 +48,7 @@ function Navbar() {
                             <Link to='/contact-us' className='nav-links-mobile' onClick={closeMobileMenu}>Contact Us</Link>
                         </li>
                     </ul>
+                    {button && <Button buttonStyle='btn--outline'>Contact Us</Button>}
                 </div>
             </nav>
         </>
