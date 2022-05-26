@@ -13,31 +13,57 @@ function HeroSection() {
             {/* <p>College of Engineering Trivandrum</p>
             <p>June 2, 3</p> */}
             <div className='wrapper'>
-                <div className='typing-sequence'>
-                    {/* <h2>College of Engineering Trivandrum</h2> */}
-                    {/* <br /> */}
-                    College of Engineering Trivandrum
-                           June 2,3 2022
-                </div>
+            <ReactTypingEffect className='typing-sequence' eraseDelay={1000} eraseSpeed={100}
+                text={["College of Engineering Trivandrum", "June 2,3 2022"]}
+                cursorRenderer={cursor => <h2 style={{color: "white"}}>{cursor}</h2>}
+                
+                displayTextRenderer={(text, i) => {
+                    return (
+                      <h2>
+                        {text.split('').map((char, i) => {
+                          const key = `${i}`;
+                          return (
+                            <span
+                              key={key}
+                              style={i >= 0 ? { color: 'white'} : {}}
+                            >{char}</span>
+                          );
+                        })}
+                      </h2>
+                    );
+                  }} 
+            />
             </div>
+            {/* <ReactTypingEffect className='typing-sequence' eraseDelay={1000} eraseSpeed={100} text={['DOT SLASH', 'College of Engineering Trivandrum', 'June 2, 3 2022']} /> */}
+
+            {/* <div className='wrapper'> */}
+            {/* <div className='typing-sequence'> */}
+            {/* <h2>College of Engineering Trivandrum</h2> */}
+            {/* <br /> */}
+            {/* College of Engineering Trivandrum
+                    June 2,3 2022 */}
+            {/* </div> */}
+            {/* </div> */}
             {/* <div className='wrapper'>
                 <div className='typing-sequence'>
                     <h3>June 2,3 2022</h3>
                 </div>
             </div> */}
-                
-            <Button className='btns' buttonStyle='btn--outline'
-                buttonSize='btn--large' >
-                Competition <i className="fa-solid fa-swords" />
-            </Button>
-            <Button className='btns' buttonStyle='btn--primary'
-                buttonSize='btn--large' >
-                Gaming <i className="fa-solid fa-alien-8bit" />
-            </Button>
-            <Button className='btns' buttonStyle='btn--primary'
-                buttonSize='btn--large' >
-                Workshops <i className="fa-solid fa-chalkboard-user" />
-            </Button>
+
+            <div className='Btn-container'>
+                <Button className='btns' buttonStyle='btn--outline'
+                    buttonSize='btn--large' >
+                    Competition <i className="fa-solid fa-swords" />
+                </Button>
+                <Button className='btns' buttonStyle='btn--primary'
+                    buttonSize='btn--large' >
+                    Gaming <i className="fa-solid fa-alien-8bit" />
+                </Button>
+                <Button className='btns' buttonStyle='btn--primary'
+                    buttonSize='btn--large' >
+                    Workshops <i className="fa-solid fa-chalkboard-user" />
+                </Button>
+            </div>
 
         </div>
     )

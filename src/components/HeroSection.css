@@ -1,4 +1,9 @@
+* {
+    border: 5px;
+}
+
 .wrapper {
+    margin-top: 25vh;
     height: fit-content;
     display: flex;
     align-content: center;
@@ -7,18 +12,18 @@
 
 .typing-sequence {
     width: 100%;
-    animation: typing 2s steps(22), blink 1s step-end infinite alternate;
+    /* animation: typing 2s steps(22), blink 1s step-end infinite alternate; */
     white-space: nowrap;
     overflow: hidden;
-    border-right: 3px solid;
+    /* border-right: 3px solid; */
     font-family: monospace;
-    font-size: 2rem;
+    font-size: 3.5vh;
     color: white;
     align-content: center;
     justify-content: center;
 }
 
-.typing-sequence h3 {
+/* .typing-sequence h3 {
     align-items: center;
 }
 
@@ -26,14 +31,30 @@
     from {
         width: 0;
     }
-}
+} */
 
-@keyframes blink {
+/* @keyframes blink {
     50% {
         border-color: transparent;
     }
+} */
+
+.Btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    position: relative;
 }
 
+.Btn-container Button {
+    margin: 20px;
+    /* display: inline; */
+    
+    
+
+    justify-content: center;
+}
 /* .tenor-gif-embed {
     object-fit: cover;
     width: 100%;
