@@ -2,19 +2,20 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar.js';
 import './App.css';
+import Home from './components/pages/Home.js';
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
-        {/* <Routes>
+        <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/competitions" element={<Competitions />} />
+          {/* <Route path="/competitions" element={<Competitions />} />
           <Route path="/workshops" element={<Workshops />} />
           <Route path="/gaming" element={<Gaming />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-        </Routes> */}
+          <Route path="/contact-us" element={<ContactUs />} /> */}
+        </Routes>
       </Router>
 
     </>
