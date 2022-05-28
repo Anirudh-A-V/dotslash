@@ -17,7 +17,7 @@
     overflow: hidden;
     /* border-right: 3px solid; */
     font-family: monospace;
-    font-size: 3.5vh;
+    font-size: 3.2vw;
     color: white;
     align-content: center;
     justify-content: center;
@@ -102,7 +102,7 @@
         overflow: hidden;
         /* border-right: 3px solid; */
         font-family: monospace;
-        font-size: 3.2vw;
+        /* font-size: 3.2vw; */
         color: white;
         align-content: center;
         justify-content: center;

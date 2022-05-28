@@ -49,6 +49,7 @@
   .nav-item {
     height: 80px;
     align-items: center;
+    justify-items: center;
   }
   
   .nav-links {
@@ -79,20 +80,27 @@
     display: none;
   }
   
-
+  
   .nav-links-mobile {
-    display: block;
+    display: flex;
     text-align: center;
-    margin: 2rem auto;
+    margin: 1rem auto;
+    
     align-items: center;
     border-radius: 4px;
-    width: 80%;
+    width: 100%;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: transparent;
     color: #fff;
-    padding: 14px 20px;
+    padding: 12px 20px;
     border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover{
+    background-color: #fff;
+    color: #000;
     transition: all 0.3s ease-out;
   }
 
