@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-    margin-top: 25vh;
+    margin-top: 20vh;
     height: fit-content;
     display: flex;
     align-content: center;
@@ -19,8 +19,8 @@
     font-family: monospace;
     font-size: 3.2vw;
     color: white;
-    align-content: center;
-    justify-content: center;
+    /* align-content: center;
+    justify-content: center; */
 }
 
 /* .typing-sequence h3 {
@@ -43,16 +43,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 15vh;
     position: relative;
 }
 
 .Btn-container Button {
     margin: 20px;
-    /* display: inline; */
-    
-    
-
+    /* display: flex; */
+    text-decoration: none;
     justify-content: center;
 }
 /* .tenor-gif-embed {
@@ -72,6 +70,16 @@
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: contain;
+    justify-content: center;
+    align-content: center;
+}
+
+/* .btns {
+    margin-top: 32px;
+} */
+
+.fa-chalkboard-user{
+    margin-left: 4px;
 }
 
 @media screen and (max-width: 900px) {
@@ -87,9 +95,9 @@
     }
 
     .Btn-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        display: block;
+        /* justify-content: center; */
+        text-decoration: none;
         align-items: center;
         margin-top: 20vh;
         position: relative;
@@ -106,11 +114,15 @@
         color: white;
         align-content: center;
         justify-content: center;
+        margin-top: 10rem;
     }
 
-    .Btn-container Button {
-        margin: 20px;
-        /* font-size: 3vw; */
-        justify-content: center;
+    .btn-mobile {
+        display: block;
+        text-decoration: none;
+    }
+
+    .btn {
+        width: 100%;
     }
 }
