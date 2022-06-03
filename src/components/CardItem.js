@@ -11,7 +11,7 @@ function CardItem(props) {
                         <img src={props.src} alt='image' className='cards__item__img' />
                     </figure>
                     <div className='cards__item__info'>
-                        {/* <h3 className='cards__item__title'>Title</h3> */}
+                        <h3 className='cards__item__title'>Title</h3>
                         <h5 className='cards__item__text'>{props.text}</h5>
                     </div>
                 </Link></li>
